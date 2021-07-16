@@ -1,7 +1,7 @@
 # Procedural-Spherical-Map-generation-using-OpenGL
 
-<img src="video.gif" width="700" height="500"/>
 <img src="patchDemo.gif" width="700" height="500"/>
+<img src="video.gif" width="700" height="500"/>
 
 This is an OpenGl Program that I developd in C++. This program dynamically and procedurally generates surface data of a random 3D spherical Map.
 
