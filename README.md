@@ -2,6 +2,7 @@
 
 ![image](video.gif)
 ![image](patchDemo.gif)
+<img src="patchDemo.gif" width="250" height="250"/>
 
 This is an OpenGl Program that I developd in C++. This program dynamically and procedurally generates surface data of a random 3D spherical Map.
 
