@@ -8,6 +8,8 @@
 
 <img src="video.gif" width="700" height="500"/>
 
+## Project Description
+
 This is an OpenGl Program that I developd in C++. This program dynamically and procedurally generates surface data of a random 3D spherical Map.
 
 The 3D surface is made up of lots of triangular chunks, and each triangualar chunk is also subsidived into lots of smaller triangles. Each subdivided triangle is then applied perlin noise to create pseudorandom noise and to make hills and 3D terrain.
