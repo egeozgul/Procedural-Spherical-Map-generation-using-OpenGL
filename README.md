@@ -6,10 +6,13 @@
 <p align="center">
 <img src="patchDemo.gif" width="700" height="500"/>
 </p>
+
 ## Surface Construction Demo With Reference Sphere
+
 <p align="center">
 <img src="video.gif" width="700" height="500"/>
 </p>
+
 ## Project Description
 
 This is an OpenGL programthat procedurally contructs a surface of an arbitrary 3D spherical Surface With Noise.
