@@ -1,24 +1,43 @@
-# Procedural-Spherical-Map-generation-using-OpenGL
+# OpenGL-based Procedural Spherical Map Generation
 
-## High Resolution Procedural Surface Construction Demo
+A sophisticated solution for high-resolution, procedural 3D spherical surface rendering, augmented with noise modulation.
 
+---
 
-<p align="center">
-<img src="patchDemo.gif" width="700" height="500"/>
-</p>
-
-## Surface Construction Demo With Reference Sphere
+## High-Resolution Surface Construction Visualization
 
 <p align="center">
-<img src="video.gif" width="700" height="500"/>
+  <img src="patchDemo.gif" width="700" height="500" alt="High-resolution procedural surface construction"/>
 </p>
 
-## Project Description
+---
 
-This is an OpenGL programthat procedurally contructs a surface of an arbitrary 3D spherical Surface With Noise.
+## Surface Rendering alongside a Reference Sphere
 
-The 3D surface is made up of lots of triangular chunks, and each triangualar chunk is also subsidived into lots of smaller triangles. Each subdivided triangle is then applied perlin noise to create pseudorandom noise and to make hills and 3D terrain.
+<p align="center">
+  <img src="video.gif" width="700" height="500" alt="Surface construction with reference sphere"/>
+</p>
 
-Each triangular chunk is stored in a hash table by hashing the coordinate of each chunk for generating hash key. So, the program only stores the triangular chunks that are closest to the camera, and deletes the ones that are far away. In this way, RAM usage is optimized since we don’t want to store the surface data that belongs to the other side of the random planet especially if the planet is giant. For further optimization, deleted triangles are recycled and reused.
+---
 
-Therefore this program allows generating infinitely large randomly generated Planet Surface data in an optimized way so that the RAM usage is independant from the Planet size. 
+## Project Overview
+
+Utilizing OpenGL, this application is engineered to procedurally fabricate the surface of an arbitrary 3D spheroid, enriched with noise modulation.
+
+### Surface Composition:
+
+- The primary structure of the 3D spheroid surface consists of extensive triangular segments.
+- Each segment undergoes a meticulous subdivision process, resulting in finer triangular constituents.
+- Through the application of Perlin noise, each subdivided triangle acquires a pseudorandom texture, enabling the formation of intricate terrains and elevations.
+
+### Memory and Storage Management:
+
+- For efficient data retrieval and storage, each triangular segment's coordinates are hashed, generating a unique key within a dedicated hash table.
+- To ensure optimal memory utilization, only those triangular segments proximate to the camera view are retained. Those segments distant from the focal point are systematically discarded.
+- Anticipating extensive planetary scales, such a mechanism negates the need to redundantly store surface data from the unseen portions of the sphere, thereby conserving RAM.
+- To further elevate efficiency, discarded triangles undergo a recycling process, ensuring their utility in subsequent renderings.
+
+### Distinctive Features:
+
+This intricate design allows for the generation of infinitely expansive, procedurally curated planetary surfaces. Importantly, memory consumption remains invariant, irrespective of the planet's magnitude, ensuring seamless performance.
+
