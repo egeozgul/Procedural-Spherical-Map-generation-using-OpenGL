@@ -1,43 +1,43 @@
-# Advanced Procedural Spherical Map Generation via OpenGL
+# OpenGL-based Procedural Spherical Map Generation
 
-Introducing a cutting-edge approach to rendering: a procedurally crafted, high-resolution 3D spheroid surface infused with dynamic noise modulation techniques.
+A sophisticated solution for high-resolution, procedural 3D spherical surface rendering, augmented with noise modulation.
 
 ---
 
-## Visual Demonstration: Precision Surface Construction
+## High-Resolution Surface Construction Visualization
 
 <p align="center">
-  <img src="patchDemo.gif" width="700" height="500" alt="Detailed demonstration of the procedural surface construction"/>
+  <img src="patchDemo.gif" width="700" height="500" alt="High-resolution procedural surface construction"/>
 </p>
 
 ---
 
-## Comparative Visualization: Surface Rendering alongside its Reference Sphere
+## Surface Rendering alongside a Reference Sphere
 
 <p align="center">
-  <img src="video.gif" width="700" height="500" alt="Comparison between the rendered surface and its reference sphere"/>
+  <img src="video.gif" width="700" height="500" alt="Surface construction with reference sphere"/>
 </p>
 
 ---
 
-## In-depth Project Synopsis:
+## Project Overview
 
-Harnessing the capabilities of OpenGL, we present an intricately engineered application tailored for the procedural generation of a 3D spheroid surface. Beyond mere construction, the application delves into the realm of enriched noise modulation for heightened realism.
+Utilizing OpenGL, this application is engineered to procedurally fabricate the surface of an arbitrary 3D spheroid, enriched with noise modulation.
 
-### Core Surface Architecture:
+### Surface Composition:
 
-- The foundational bedrock of the 3D spheroid's surface is sculpted using a plethora of triangular facets.
-- Pursuing granularity, each primary triangular facet undergoes a rigorous subdivision regimen, birthing a series of refined sub-triangular elements.
-- The magic of Perlin noise is meticulously applied to each of these subdivided triangles. This instills them with a uniquely pseudorandom texture, paving the way for the birth of detailed terrains and topographical nuances.
+- The primary structure of the 3D spheroid surface consists of extensive triangular segments.
+- Each segment undergoes a meticulous subdivision process, resulting in finer triangular constituents.
+- Through the application of Perlin noise, each subdivided triangle acquires a pseudorandom texture, enabling the formation of intricate terrains and elevations.
 
-### Superior Memory Management & Storage Techniques:
+### Memory and Storage Management:
 
-- With a nod to efficiency and rapid data accessibility, each triangular facet's spatial coordinates undergo a hashing process. This culminates in a distinct key, ensconced within a purpose-built hash table.
-- Memory optimization takes center stage: our system judiciously retains only the triangular facets within the camera's purview. Marginal facets, distant from the observer's focal field, are programmatically expunged.
-- In scenarios of expansive celestial bodies, this selective retention eliminates redundancies. By circumventing the storage of inconspicuous surface data, RAM conservation is achieved.
-- Topping off our commitment to optimal performance, facets that are evicted from memory don't just vanish—they're reprocessed and reincarnated, ready for future rendering tasks.
+- For efficient data retrieval and storage, each triangular segment's coordinates are hashed, generating a unique key within a dedicated hash table.
+- To ensure optimal memory utilization, only those triangular segments proximate to the camera view are retained. Those segments distant from the focal point are systematically discarded.
+- Anticipating extensive planetary scales, such a mechanism negates the need to redundantly store surface data from the unseen portions of the sphere, thereby conserving RAM.
+- To further elevate efficiency, discarded triangles undergo a recycling process, ensuring their utility in subsequent renderings.
 
-### Application Hallmarks:
+### Distinctive Features:
 
-At its essence, our toolset offers a limitless horizon, empowering users to generate vast, procedurally conceived celestial surfaces. Regardless of the planetary expanse under consideration, memory efficiency remains uncompromised, guaranteeing uninterrupted and stellar performance.
+This intricate design allows for the generation of infinitely expansive, procedurally curated planetary surfaces. Importantly, memory consumption remains invariant, irrespective of the planet's magnitude, ensuring seamless performance.
 
