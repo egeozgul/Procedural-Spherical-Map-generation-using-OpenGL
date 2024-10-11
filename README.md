@@ -1,6 +1,6 @@
 # OpenGL-based Procedural Spherical Map Generation
 
-A sophisticated solution for high-resolution, procedural 3D spherical surface rendering, augmented with noise modulation.
+A solution for high-resolution, procedural 3D spherical surface rendering, augmented with noise modulation.
 
 ---
 
@@ -22,7 +22,7 @@ A sophisticated solution for high-resolution, procedural 3D spherical surface re
 
 ## Project Overview
 
-Utilizing OpenGL, this application is engineered to procedurally fabricate the surface of an arbitrary 3D spheroid, enriched with noise modulation.
+Utilizing OpenGL, this application is engineered to procedurally fabricate the surface of an arbitrary 3D spheroid.
 
 ### Surface Composition:
 
